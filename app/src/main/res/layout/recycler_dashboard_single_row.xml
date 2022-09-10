@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutBook"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/teal_200">
+    <ImageView
+        android:id="@+id/imgBookImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/txtBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgBookImage"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:text="Book Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtAuthorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBookName"
+        android:layout_toRightOf="@+id/imgBookImage"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:text="Author name"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/txtCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAuthorName"
+        android:layout_toRightOf="@+id/imgBookImage"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:text="Cost"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="3dp"
+        android:text="rating"
+        android:textSize="18sp"
+
+        />
+    <ImageView
+        android:id="@+id/imgRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/txtRating"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_star_rate_24"/>
+</RelativeLayout>
+</LinearLayout>
+
